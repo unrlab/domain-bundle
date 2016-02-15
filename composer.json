@@ -1,0 +1,30 @@
+{
+    "name" : "unrlab/domain-bundle",
+    "description" : "A bundle that use the hal format for rest api",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Jeremy Guido",
+        "email" : "dje.guido@gmail.com"
+    }],
+    "keywords" : ["HAL serialization REST bundle symfony"],
+    "license" : [
+        "Apache"
+    ],
+    "repositories" : [
+        {
+            "type": "git",
+            "url":  "git@github.com:unrlab/domain-bundle.git"
+        }
+    ],
+    "require" : {
+        "php": ">=5.3.3",
+        "jms/serializer-bundle": "^1.1",
+        "unrlab/hal-support": "dev-master"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Unrlab\\Bundle\\DomainBundle" : ""
+        }
+    },
+    "target-dir" : "Unrlab/Bundle/DomainBundle"
+}
