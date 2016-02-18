@@ -21,21 +21,21 @@ class LoadUserData extends AbstractFixture implements OrderedFixtureInterface{
         
         $superAdmin = new SuperAdmin('admin', md5('admin'));
         $superAdmin
-                ->setFirstname('Laura')
-                ->setLastname('Grimaldi')
-                ->setEmail('laura.grimaldi1@gmail.com');
+                ->setFirstname('macha')
+                ->setLastname('Grimm')
+                ->setEmail('macha.grimm@notgmail.com');
         
         $billUser = new BillUser('bill', md5('bill'));
         $billUser
                 ->setFirstname('Bill')
                 ->setLastname('User')
-                ->setEmail('dje.guido@gmail.com');
+                ->setEmail('bill.user@notgmail.com');
         
         $billUser1 = new BillUser('tom', md5('tom'));
         $billUser1
                 ->setFirstname('Tom')
                 ->setLastname('Tom')
-                ->setEmail('jeremyguido@yahoo.fr');
+                ->setEmail('tom.tom@notgmail.fr');
         
         $manager->persist($superAdmin);
         $manager->persist($billUser);
@@ -48,9 +48,9 @@ class LoadUserData extends AbstractFixture implements OrderedFixtureInterface{
                 ->setReference('SDC')
                 ->setSiren('123456789')
                 ->addUser($billUser)
-                ->setAddress1('218, Chemin du Parrou')
-                ->setCp('06560')
-                ->setCity('Valbonne')
+                ->setAddress1('2, place Masséna')
+                ->setCp('06000')
+                ->setCity('Nice')
                 ->setCountry($country);
         
         $company1 = new Company();
