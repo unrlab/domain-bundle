@@ -8,7 +8,7 @@
     }],
     "keywords" : ["HAL serialization REST bundle symfony"],
     "license" : [
-        "Apache"
+        "GPL-3.0-or-later"
     ],
     "repositories" : [
         {
